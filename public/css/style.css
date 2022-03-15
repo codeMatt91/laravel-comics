@@ -69,9 +69,30 @@ nav ul li a:hover, nav ul li a.active {
   color: #0377f8;
 }
 
+.jumbotron {
+  height: 400px;
+}
+.jumbotron img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.jumbotron .container {
+  position: relative;
+}
+.jumbotron .container button {
+  position: absolute;
+  bottom: -30px;
+  left: 0%;
+}
+
 .main-series {
   background-color: black;
   padding: 20px 0;
+  height: 200px;
 }
 .main-series .load {
   width: 100%;
@@ -86,22 +107,6 @@ nav ul li a:hover, nav ul li a.active {
 .container {
   display: flex;
   flex-wrap: wrap;
-}
-
-.jumbotron {
-  background-image: url("../assets/img/jumbotron.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-}
-.jumbotron .container {
-  position: relative;
-  height: 100%;
-}
-.jumbotron .container button {
-  position: absolute;
-  bottom: -30px;
-  left: 0%;
 }
 
 h2 {
