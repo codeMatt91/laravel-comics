@@ -1,3 +1,7 @@
+@php
+$navs = config('navs');
+@endphp
+
 <header>
     <div class="container">
         <div id="logo">
@@ -7,10 +11,11 @@
         </div>
         <nav>
             <ul>
+                @foreach($navs as $nav)
                 <li>
-                    <a href="link.url">
-                        Comics</a>
+                    <a href="{{ $nav['url'] }}">{{ $nav['name'] }}</a>
                 </li>
+                @endforeach
             </ul>
         </nav>
     </div>

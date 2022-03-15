@@ -19,7 +19,7 @@
 .main-series {
     background-color: $c-black;
     padding: 20px 0;
-    height: 200px;
+    
     .load {
       width: 100%;
       display: flex;
@@ -69,4 +69,11 @@
     img {
       margin-top: 15px;
     }
+  }
+
+  // SECTION CARD
+  .card-serie {
+    flex-basis: calc(100% / 6);
+    color: $c-white;
+    padding: 20px;
   }

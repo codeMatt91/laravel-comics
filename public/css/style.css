@@ -92,7 +92,6 @@ nav ul li a:hover, nav ul li a.active {
 .main-series {
   background-color: black;
   padding: 20px 0;
-  height: 200px;
 }
 .main-series .load {
   width: 100%;
@@ -143,6 +142,12 @@ h2 {
 }
 .card-img:last-child .immagine img {
   margin-top: 15px;
+}
+
+.card-serie {
+  flex-basis: 16.6666666667%;
+  color: white;
+  padding: 20px;
 }
 
 .footer-top {

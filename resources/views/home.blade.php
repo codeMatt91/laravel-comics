@@ -1,4 +1,4 @@
-@extends('layout.main')
+ 
 
 @section('content')
 
@@ -12,7 +12,12 @@
 <!-- Section Main-Series  -->
 <div class="main-series">
     <div class="container">
-        <CardImmage />
+        @foreach($films as $film)
+        <div class="card-serie">
+            <img src="{{ $film['thumb'] }}" alt="serie.type" />
+            <h5> {{ $film['title'] }}}</h5>
+        </div>
+        @endforeach
         <div class="load"><button>LOAD MORE</button></div>
     </div>
 </div>
