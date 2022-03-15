@@ -1,0 +1,68 @@
+.main-series {
+    background-color: $c-black;
+    padding: 20px 0;
+    .load {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      button {
+        font-size: 12px;
+        padding: 10px 40px;
+      }
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .jumbotron {
+    background-image: url("../assets/img/jumbotron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    .container {
+      position: relative;
+      height: 100%;
+      button {
+        position: absolute;
+        bottom: -30px;
+        left: 0%;
+      }
+    }
+  }
+  
+  h2 {
+    color: $c-white;
+  }
+  
+  #shop {
+    position: relative;
+    z-index: 1;
+    color: $c-white;
+    padding: 20px 0;
+    background-color: $c-blue;
+  }
+  
+  .card-img {
+    width: 20%;
+    figure {
+      display: flex;
+      align-items: center;
+      .immagine {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+      }
+      .text {
+        font-size: 15px;
+      }
+    }
+  }
+  
+  .card-img:last-child .immagine {
+    width: 100%;
+    img {
+      margin-top: 15px;
+    }
+  }

@@ -36,3 +36,187 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  height: 100%;
+}
+nav ul li {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav ul li a:hover, nav ul li a.active {
+  color: #0377f8;
+}
+
+.main-series {
+  background-color: black;
+  padding: 20px 0;
+}
+.main-series .load {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-series .load button {
+  font-size: 12px;
+  padding: 10px 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jumbotron {
+  background-image: url("../assets/img/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.jumbotron .container {
+  position: relative;
+  height: 100%;
+}
+.jumbotron .container button {
+  position: absolute;
+  bottom: -30px;
+  left: 0%;
+}
+
+h2 {
+  color: white;
+}
+
+#shop {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px 0;
+  background-color: #0377f8;
+}
+
+.card-img {
+  width: 20%;
+}
+.card-img figure {
+  display: flex;
+  align-items: center;
+}
+.card-img figure .immagine {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+.card-img figure .text {
+  font-size: 15px;
+}
+
+.card-img:last-child .immagine {
+  width: 100%;
+}
+.card-img:last-child .immagine img {
+  margin-top: 15px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  color: white;
+  background-image: url("../assets/img/footer-bg.jpg");
+  background-position: contain;
+  max-height: 350px;
+}
+
+#links {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#links .list {
+  width: 33%;
+}
+#links h3 {
+  padding: 0 0 10px 10px;
+}
+#links ul {
+  margin: 0 10px;
+  list-style-type: none;
+  align-content: space-around;
+}
+#links ul li {
+  color: grey;
+}
+
+.logo {
+  position: relative;
+  width: 50%;
+  z-index: 0;
+}
+.logo img {
+  position: absolute;
+  right: 0;
+  bottom: -140px;
+  width: 90%;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 150px;
+  background-color: #2a2a2a;
+  z-index: 1;
+}
+
+#button {
+  display: flex;
+  width: 70%;
+}
+#button button {
+  background-color: #2a2a2a;
+  padding: 10px;
+  border: 2px solid #0377f8;
+}
+#button button a {
+  color: white;
+  text-decoration: none;
+}
+
+#social {
+  display: flex;
+  align-items: center;
+}
+#social ul {
+  display: flex;
+}
+#social ul li {
+  list-style-type: none;
+  margin: 5px;
+}
+#social h4 {
+  margin-right: 20px;
+  color: #0377f8;
+}
