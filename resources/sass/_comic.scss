@@ -34,13 +34,45 @@
 .information{
     position: relative;
     display: flex;
-    padding: 80px;
+    padding: 50px 0;
 }
 
 #description{
+    padding: 0 20px;
     width: 70%;
-    h1{
+    h2{
         color: $c-comic;
+        font-size: 25px;
+    }
+    #row{
+        padding: 0 20px;
+        margin: 25px 0;
+        height: 50px;
+        background-color: $c-darkgreen;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color:white;
+        #wrapper{
+            display: flex;
+            align-items: center;
+            width: 70%;
+            justify-content: space-between;
+            
+            height: 100%;
+        }
+        #price{
+            display: flex;
+            #local{
+                color: $c-fluogreen;
+            }
+            #disponibility{
+                color: $c-fluogreen;
+            }
+        }
+    }
+    .plot{
+        font-size: 18px;
     }
 }
 

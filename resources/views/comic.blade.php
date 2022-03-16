@@ -22,12 +22,28 @@
 
 <!-- Content Description Comic  -->
 
-<div class="information">
-    <div class="container-sm">
+<div class="container-sm">
+    <div class="information">
         <div id="description">
-            <h1>{{strtoupper($film['title'])}}</h1>
+            <h2>{{strtoupper($film['title'])}}</h2>
+            <div id="row">
+                <div id="wrapper">
+                    <div id="price">
+                        <span id="local">U.S Price:</span>
+                        <span>{{ $film['price'] }}</span>
+                    </div>
+                    <div id="disponibility">AVAIBLE</div>
+                </div>
+                <div id="check-avaible"><strong> Check Availability </strong></div>
+            </div>
+
+            <p class="plot" >{{ $film['description'] }}</p>
         </div>
-        <div id="advertisement"></div>
+        <div id="advertisement">
+            <figure>
+                <img src="{{ asset('images/adv.jpg') }}" alt="">
+            </figure>
+        </div>
     </div>
 </div>
 

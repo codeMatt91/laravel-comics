@@ -202,14 +202,45 @@ h2 {
 .information {
   position: relative;
   display: flex;
-  padding: 80px;
+  padding: 50px 0;
 }
 
 #description {
+  padding: 0 20px;
   width: 70%;
 }
-#description h1 {
+#description h2 {
   color: #003753;
+  font-size: 25px;
+}
+#description #row {
+  padding: 0 20px;
+  margin: 25px 0;
+  height: 50px;
+  background-color: #4BB14F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+#description #row #wrapper {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+  height: 100%;
+}
+#description #row #price {
+  display: flex;
+}
+#description #row #price #local {
+  color: #B1FA86;
+}
+#description #row #price #disponibility {
+  color: #B1FA86;
+}
+#description .plot {
+  font-size: 18px;
 }
 
 #advertisement {
