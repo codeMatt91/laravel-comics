@@ -16,9 +16,9 @@
 <!-- Section Main-Series  -->
 <div class="main-series">
     <div class="container">
-        @foreach($films as $film)
+        @foreach($films as $id => $film)
         <div class="card-serie">
-            <a href=""><img src="{{ $film['thumb'] }}" alt="serie.type" /></a> 
+            <a href="{{ route('comic', ['id' => $id]) }}"><img src="{{ $film['thumb'] }}" alt="serie.type" /></a> 
             <h5> {{ $film['title'] }}</h5>
         </div>
         @endforeach

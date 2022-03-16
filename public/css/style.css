@@ -10,6 +10,12 @@
   padding: 20px 0;
 }
 
+.container-sm {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
 .active {
   color: #0377f8;
 }
@@ -160,6 +166,19 @@ h2 {
   flex-basis: 16.6666666667%;
   color: white;
   padding: 20px;
+}
+
+#base-card {
+  height: 100px;
+  background-color: #0377f8;
+}
+#base-card .container-sm {
+  position: relative;
+}
+#base-card .container-sm figure {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
 }
 
 .footer-top {

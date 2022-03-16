@@ -1,0 +1,14 @@
+#base-card{
+    height: 100px;
+    background-color: $c-blue;
+    .container-sm{
+        position: relative;
+        
+        figure{
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+        }
+    }
+}
+
