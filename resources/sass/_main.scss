@@ -48,15 +48,15 @@
   }
   
   .card-img {
-    width: 20%;
+    display: flex;
     figure {
       display: flex;
       align-items: center;
       .immagine {
         display: flex;
         align-items: center;
-        width: 50%;
-        height: 50%;
+        width: 25%;
+        height: 25%;
       }
       .text {
         font-size: 15px;

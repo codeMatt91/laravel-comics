@@ -121,7 +121,7 @@ h2 {
 }
 
 .card-img {
-  width: 20%;
+  display: flex;
 }
 .card-img figure {
   display: flex;
@@ -130,8 +130,8 @@ h2 {
 .card-img figure .immagine {
   display: flex;
   align-items: center;
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: 25%;
 }
 .card-img figure .text {
   font-size: 15px;
