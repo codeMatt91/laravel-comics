@@ -1,3 +1,7 @@
+@php
+$socials = config('db_footer')
+@endphp
+
 <footer>
     <div class="footer-top">
         <div class="container">
@@ -11,7 +15,7 @@
             </div>
             <div class="logo">
                 <figure>
-                    <img src="" alt="Logo dc" />
+                    <img src="{{asset("../images/dc-logo-bg.png")}}" alt="Logo dc" />
                 </figure>
             </div>
         </div>
@@ -24,9 +28,11 @@
             <div id="social">
                 <h4>FOLLOW US</h4>
                 <ul>
+                    @foreach($socials as $social)
                     <li>
-                        <img src="" alt="immage.description">
+                        <img src="{{asset("images/" . $social['url'])}}" alt="{{$social['name']}}">
                     </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
