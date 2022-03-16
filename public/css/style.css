@@ -136,6 +136,9 @@ h2 {
   padding: 20px 0;
   background-color: #0377f8;
 }
+#shop .immagine {
+  width: 40%;
+}
 
 .card-img {
   display: flex;
@@ -143,22 +146,14 @@ h2 {
 .card-img figure {
   display: flex;
   align-items: center;
+  width: 20%;
 }
 .card-img figure .immagine {
   display: flex;
   align-items: center;
-  width: 25%;
-  height: 25%;
 }
 .card-img figure .text {
   font-size: 15px;
-}
-
-.card-img:last-child .immagine {
-  width: 100%;
-}
-.card-img:last-child .immagine img {
-  margin-top: 15px;
 }
 
 .card-serie {

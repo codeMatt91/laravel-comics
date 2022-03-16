@@ -45,6 +45,9 @@
     color: $c-white;
     padding: 20px 0;
     background-color: $c-blue;
+    .immagine{
+      width: 40%;
+    }
   }
   
   .card-img {
@@ -52,22 +55,14 @@
     figure {
       display: flex;
       align-items: center;
+      width: 20%;
       .immagine {
         display: flex;
         align-items: center;
-        width: 25%;
-        height: 25%;
       }
       .text {
         font-size: 15px;
       }
-    }
-  }
-  
-  .card-img:last-child .immagine {
-    width: 100%;
-    img {
-      margin-top: 15px;
     }
   }
 
