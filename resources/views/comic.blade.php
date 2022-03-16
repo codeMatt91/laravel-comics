@@ -47,4 +47,51 @@
     </div>
 </div>
 
+<div id="info">
+    <div class="container-sm">
+        <div id="talent">
+            <div class="row">
+                <div class="col title">
+                    <h3>Talent</h3>
+                </div>
+                <div class="col">
+                    <div id="first">Art by:</div>
+                    <div id="second">
+                        @foreach($film['artists'] as $artist)
+                            <span>{{ $artist }},</span>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="first">Written by:</div>
+                    <div id="second">
+                        @foreach($film['writers'] as $writers)
+                            <span>{{ $writers }},</span>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="specs">
+            <div class="row">
+                <div class="col title">
+                    <h3>Specs</h3>
+                </div>
+                <div class="col">
+                    <div id="first">Series:</div>
+                    <div id="second">{{strtoupper($film['type'])}}</div>
+                </div>
+                <div class="col">
+                    <div id="first">U.S.Price:</div>
+                    <div id="second">{{$film['price']}}</div>
+                </div>
+                <div class="col">
+                    <div id="first">On Sale Date:</div>
+                    <div id="second">{{$film['price']}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
