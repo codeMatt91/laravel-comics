@@ -13,7 +13,9 @@
 <div id="base-card">
     <div class="container-sm">
         <figure>
+            <div class="banner" id="banner-top">{{strtoupper($film['type'])}}</div>
             <img src="{{ $film['thumb'] }}" alt="{{$film['title']}}">
+            <div class="banner" id="banner-bottom">VIEW GALLERY</div>
         </figure>
     </div>
 </div>

@@ -174,11 +174,29 @@ h2 {
 }
 #base-card .container-sm {
   position: relative;
+  height: 100%;
 }
 #base-card .container-sm figure {
   position: absolute;
-  bottom: -30px;
+  bottom: 30px;
   left: 0;
+  border: 1px solid white;
+}
+#base-card .container-sm figure .banner {
+  height: 20px;
+  background-color: #78BCDF;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+#base-card .container-sm figure #banner-bottom {
+  bottom: 0px;
+  width: 100%;
+}
+#base-card .container-sm figure #banner-top {
+  font-size: 14px;
+  top: 0px;
+  width: 50%;
 }
 
 .footer-top {

@@ -3,11 +3,28 @@
     background-color: $c-blue;
     .container-sm{
         position: relative;
-        
+        height: 100%;
         figure{
             position: absolute;
-            bottom: -30px;
+            bottom: 30px;
             left: 0;
+            border: 1px solid white;
+            .banner{
+                height: 20px;
+                background-color: #78BCDF;
+                position: absolute;
+                color: white;
+                text-align: center;
+            }
+            #banner-bottom{
+                bottom: 0px;
+                width: 100%;
+            }
+            #banner-top{
+                font-size: 14px;
+                top: 0px;
+                width: 50%;
+            }
         }
     }
 }
