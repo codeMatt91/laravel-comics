@@ -7,6 +7,26 @@ $socials = config('db_footer')
         <div class="container">
             <div id="links">
                 <div class="list">
+                    <h3>DC COMICS</h3>
+                    <ul>
+                        @foreach($comics as $comic)
+                        <li>{{$comic['title']}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div class="list">
+                    <h3>Title</h3>
+                    <ul>
+                        <li>testo nel footer</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h3>Title</h3>
+                    <ul>
+                        <li>testo nel footer</li>
+                    </ul>
+                </div>
+                <div class="list">
                     <h3>Title</h3>
                     <ul>
                         <li>testo nel footer</li>

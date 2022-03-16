@@ -231,6 +231,19 @@ Route::get('/', function () {
     return view('home', ['films' => $films]);
 })->name('home');
 
+Route::get('/footer', function () {
+    $comics = [
+        'title' => 'Characters',
+        'title' => 'Comics',
+        'title' => 'Movies',
+        'title' => 'Tv',
+        'title' => 'Games',
+        'title' => 'Videos',
+        'title' => 'News',
+    ];
+    return view('includes.footer', ['comics' => $comics]);
+})->name('footer');
+
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
