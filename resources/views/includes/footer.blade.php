@@ -6,30 +6,39 @@ $socials = config('db_footer')
     <div class="footer-top">
         <div class="container">
             <div id="links">
+                <div id="group">
+                    <div class="list">
+                        <h3>DC COMICS</h3>
+                        <ul>
+                            @foreach($comics as $comic)
+                            <li>{{$comic}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    
+                    <div class="list">
+                        <h3>SHOP</h3>
+                        <ul>
+                            @foreach($shops as $shop)
+                            <li>{{$shop}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
                 <div class="list">
-                    <h3>DC COMICS</h3>
+                    <h3>DC</h3>
                     <ul>
-                        @foreach($comics as $comic)
-                        <li>{{$comic['title']}}</li>
+                        @foreach($dcs as $dc)
+                        <li>{{$dc}}</li>
                         @endforeach
                     </ul>
                 </div>
                 <div class="list">
-                    <h3>Title</h3>
+                    <h3>SITES</h3>
                     <ul>
-                        <li>testo nel footer</li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Title</h3>
-                    <ul>
-                        <li>testo nel footer</li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Title</h3>
-                    <ul>
-                        <li>testo nel footer</li>
+                        @foreach($sites as $site)
+                        <li>{{$site}}</li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

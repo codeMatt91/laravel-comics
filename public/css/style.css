@@ -37,6 +37,11 @@ button {
   cursor: pointer;
 }
 
+#banner {
+  height: 20px;
+  background-color: #0377f8;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -165,9 +170,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-#links .list {
-  width: 33%;
-}
 #links h3 {
   padding: 0 0 10px 10px;
 }
@@ -188,7 +190,7 @@ h2 {
 .logo img {
   position: absolute;
   right: 0;
-  bottom: -235px;
+  bottom: -140px;
   width: 90%;
 }
 

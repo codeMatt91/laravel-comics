@@ -227,22 +227,36 @@ Route::get('/', function () {
             ],
         ],
     ];
-
-    return view('home', ['films' => $films]);
+    $comics = [
+        'Characters',
+        'Comics',
+        'Movies',
+        'Tv',
+        'Games',
+        'Videos',
+        'News',
+    ];
+    $shops = [
+        'Shop DC',
+        'Shop DC Collectibles',
+    ];
+    $dcs = [
+        "Terms of Use",
+        "Privacy policy",
+        "Add Choise",
+        "Advertising",
+        "Jobs",
+        "Subscription",
+        "Workshops",
+        "CPSC Certificates",
+        "Ratings",
+        "Shop help",
+        "Contact Us",
+    ];
+    $sites = ["DC", "MAD Megazine", "DC Universe", "DC Power Visa"];
+    return view('home', compact('films', 'comics', 'shops', 'dcs', 'sites'));
 })->name('home');
 
-Route::get('/footer', function () {
-    $comics = [
-        'title' => 'Characters',
-        'title' => 'Comics',
-        'title' => 'Movies',
-        'title' => 'Tv',
-        'title' => 'Games',
-        'title' => 'Videos',
-        'title' => 'News',
-    ];
-    return view('footer', ['comics' => $comics]);
-})->name('footer');
 
 Route::get('/characters', function () {
     return view('characters');

@@ -3,6 +3,11 @@ $navs = config('navs');
 @endphp
 
 <header>
+    <div id="banner">
+        <div class="container">
+            <div></div>
+        </div>
+    </div>
     <div class="container">
         <div id="logo">
             <figure>
