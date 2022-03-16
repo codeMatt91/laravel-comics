@@ -241,7 +241,7 @@ Route::get('/footer', function () {
         'title' => 'Videos',
         'title' => 'News',
     ];
-    return view('includes.footer', ['comics' => $comics]);
+    return view('footer', ['comics' => $comics]);
 })->name('footer');
 
 Route::get('/characters', function () {
