@@ -5,7 +5,8 @@ $navs = config('navs');
 <header>
     <div id="banner">
         <div class="container">
-            <div></div>
+            <div class="banner">DC POWER VISA</div>
+            <div class="banner">ADDITIONAL DC SITES</div>
         </div>
     </div>
     <div class="container">
