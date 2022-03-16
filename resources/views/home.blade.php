@@ -18,7 +18,7 @@
     <div class="container">
         @foreach($films as $film)
         <div class="card-serie">
-            <img src="{{ $film['thumb'] }}" alt="serie.type" />
+            <a href=""><img src="{{ $film['thumb'] }}" alt="serie.type" /></a> 
             <h5> {{ $film['title'] }}</h5>
         </div>
         @endforeach
