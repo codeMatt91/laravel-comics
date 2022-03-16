@@ -20,4 +20,15 @@
     </div>
 </div>
 
+<!-- Content Description Comic  -->
+
+<div class="information">
+    <div class="container-sm">
+        <div id="description">
+            <h1>{{strtoupper($film['title'])}}</h1>
+        </div>
+        <div id="advertisement"></div>
+    </div>
+</div>
+
 @endsection

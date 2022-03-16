@@ -11,7 +11,7 @@
 }
 
 .container-sm {
-  width: 900px;
+  width: 1000px;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -199,6 +199,23 @@ h2 {
   width: 50%;
 }
 
+.information {
+  position: relative;
+  display: flex;
+  padding: 80px;
+}
+
+#description {
+  width: 70%;
+}
+#description h1 {
+  color: #003753;
+}
+
+#advertisement {
+  width: 30%;
+}
+
 .footer-top {
   display: flex;
   align-items: center;
@@ -208,11 +225,16 @@ h2 {
   background-position: contain;
   max-height: 350px;
 }
+.footer-top .container {
+  height: 100%;
+  padding: 0;
+}
 
 #links {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 #links h3 {
   padding: 0 0 10px 10px;
@@ -229,12 +251,12 @@ h2 {
 .logo {
   position: relative;
   width: 50%;
-  z-index: 0;
+  overflow: hidden;
 }
 .logo img {
   position: absolute;
   right: 0;
-  bottom: -140px;
+  bottom: -80px;
   width: 90%;
 }
 

@@ -29,3 +29,21 @@
     }
 }
 
+// Section Description Comic
+
+.information{
+    position: relative;
+    display: flex;
+    padding: 80px;
+}
+
+#description{
+    width: 70%;
+    h1{
+        color: $c-comic;
+    }
+}
+
+#advertisement{
+    width: 30%;
+}
